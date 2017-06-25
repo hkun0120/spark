@@ -14,4 +14,4 @@
      
 # 测试spark集群
     bin/spark-shell --help  
-    bin/spark-shell --master spark://10.211.55.10:7077 //在运行集群，指定master即spark的standalone模式
+    bin/spark-shell --master spark://10.211.55.10:7077 //在运行集群，指定master即spark的standalone模式
