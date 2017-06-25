@@ -6,4 +6,9 @@
       spark1.4.0：master、spark001、spark002
       hadoop2.5.2：master(nn1)、master2(nn2)、spark001、spark002、spark003
       zookeeper3.4.6:master、spark001、spark002
-  
+      kafka_2.10-0.8.2.1:master、spark001、spark002
+# 测试kafka集群
+     ./kafka-server-start.sh ../config/server.properties &
+     bin/kafka-console-prucer.sh --topic car_events --broker-list master:9092
+     ./kafka-console-consumer.sh --topic car_events --zookeeper master:2181 --from-beginning
+     
