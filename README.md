@@ -11,4 +11,7 @@
      ./kafka-server-start.sh ../config/server.properties &
      bin/kafka-console-prucer.sh --topic car_events --broker-list master:9092
      ./kafka-console-consumer.sh --topic car_events --zookeeper master:2181 --from-beginning
-     
+     
+# 测试spark集群
+    bin/spark-shell --help  
+    bin/spark-shell --master spark://10.211.55.10:7077 //在运行集群，指定master即spark的standalone模式
